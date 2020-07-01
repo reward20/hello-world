@@ -13,7 +13,7 @@ void sort(int *m,int size)
     {
         for(int i = y+1;i<size;i++)
         {
-            if(m[y]<m[i])
+            if(m[y]<m[i])  // ">" or "<" sorts in ascending / descending order
             {
                 int f = m[i];
                 m[i]=m[y];
