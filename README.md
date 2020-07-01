@@ -1,4 +1,3 @@
 # hello-world
-first program
-you dont look this
-eeeeeew
+i learn c++
+in hear i post my mini programm
