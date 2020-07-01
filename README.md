@@ -1,3 +1,3 @@
 # hello-world
-i learn c++
-in hear i post my mini programm
+I learn c++.
+In hear i post my mini program.
