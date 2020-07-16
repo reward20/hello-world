@@ -1,0 +1,47 @@
+
+#include <iostream>
+#include <cstdlib>
+#include <string>
+#include <math.h>
+using namespace std;
+
+class My
+{
+    public:
+    string name = "Obj this ";
+    int nn;
+    My * next1, *next2;
+    bool end = false;
+    My(int n)
+    {
+        nn=n;
+        if(n>0)
+        {
+            next1 = new My(n-1);
+            next2 = new My(n-1);
+        }
+        else
+            end = true;
+    }
+    void show()
+    {
+        cout<<name<<nn;
+    }
+    ~My()
+    {
+        if(!end)
+        {
+            delete next1;
+            delete next2;
+        }
+        show();
+        cout<<" deleted"<<"\n";
+    }
+};
+
+int main()
+{
+    My *pnt = new My(2);
+    delete pnt;
+    return 0;
+}
